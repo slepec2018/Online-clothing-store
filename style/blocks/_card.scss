@@ -1,0 +1,377 @@
+.card {
+    background-color: $main_color_white;
+}
+
+.card_container {
+    @include flex_space
+}
+
+.card_container_col_1 {
+    width: 652px;
+    padding-top: 96px;
+    padding-bottom: 128px;
+}
+
+.card_items {
+    margin-bottom: 72px;
+}
+
+.card_item {
+    width: 652px;
+    margin-bottom: 40px;
+    display: flex;
+    box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+
+.card_iten_img {
+    margin-right: 31px;
+}
+
+.card_item_text {
+    margin-right: 132px;
+}
+
+.card_item_text_zag {
+    margin-top: 22px;
+    margin-bottom: 42px;
+    font-weight: $main_weight_regular;
+    font-size: $main_size_24;
+    line-height: $main_height_29;
+    color: $main_color_black;
+}
+
+.card_item_text_main {
+    margin-bottom: 6px;
+    font-weight: $main_weight_regular;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.card_item_text_main_marg {
+    margin-right: 24px;
+    display: inline-block;
+}
+
+.card_item_text_form {
+    display: inline-block;
+    width: 43px;
+    height: 24px;
+    border: 1px solid $main_color_grey;
+    font-weight: $main_weight_regular;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+}
+
+.card_item_text_second {
+    color: $main_color_pink;
+}
+
+.card_item_text_button {
+    background: url(../pictures/card_close.svg) no-repeat center;
+    width: 18px;
+    height: 18px;
+    border: 0;
+    background-color: transparent;
+    margin-top: 28px;
+    transition: 1s;
+    cursor: pointer;
+
+    &:hover {
+        background: url(../pictures/card_close_hover.svg) no-repeat center;
+    }
+}
+
+.card_item_buttons {
+    @include flex_space
+}
+
+.card_item_button {
+    width: 234px;
+    height: 49px;
+    border: 1px solid #A4A4A4;
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_14;
+    line-height: $main_height_17;
+    color: $main_color_black;
+    background-color: $main_color_white;
+    transition: color 1s, border 1s;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid $main_color_pink;
+        color: $main_color_pink;
+    }
+}
+
+.card_container_col_2 {
+    margin-top: 113px;
+    width: 360px;
+}
+
+.card_forms {
+    margin-bottom: 57px;
+}
+
+.card_form_field {
+    border: none;
+}
+
+.card_form_legend {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_16;
+    line-height: $main_height_19;
+    color: $main_color_black;
+    margin-bottom: 20px;
+}
+
+.card_form_input {
+    width: 358px;
+    height: 44px;
+    margin-bottom: 21px;
+    padding-left: 17px;
+    padding-right: 17px;
+
+    &:focus {
+        outline-color: $main_color_pink;
+    }
+}
+
+.card_form_input::placeholder {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_13;
+    line-height: $main_height_16;
+    color: $main_color_grey_col_3;
+}
+
+.card_form_button {
+    width: 100px;
+    height: 34px;
+    background-color: $main_color_white;
+    border: 1px solid #A4A4A4;
+    font-weight: $main_weight_lighter;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    transition: border 1s, color 1s;
+    cursor: pointer;
+
+    &:hover {
+        color: $main_color_pink;
+        border: 1px solid $main_color_pink;
+    }
+}
+
+.card_basket {
+    width: 360px;
+    height: 214px;
+    background-color: #F5F3F3;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_basket_text_sub {
+    font-style: normal;
+    font-weight: $main_weight_regular;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    margin-top: 39px;
+    text-align: end;
+    margin-right: 34px;
+}
+
+.card_basket_text_sub_col_1 {
+    padding-left: 20px;
+}
+
+.card_basket_text_gra {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_16;
+    line-height: $main_height_19;
+    color: $main_color_black;
+    text-align: end;
+    margin-top: 12px;
+    margin-right: 34px;
+}
+
+.card_basket_text_gra_col_1 {
+    padding-left: 20px;
+    font-weight: $main_weight_bold;
+    color: $main_color_pink;
+}
+
+.card_basket_hor {
+    width: 275px;
+    height: 1px;
+    background-color: #E2E2E2;
+    margin-top: 21px;
+    margin-left: 43px;
+}
+
+.card_basket_button {
+    width: 273px;
+    height: 50px;
+    margin-top: 17px;
+    background-color: $main_color_pink;
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_16;
+    line-height: $main_height_19;
+    color: $main_color_white;
+    border: none;
+    margin-left: 44px;
+    transition: border 1s, color 1s, background-color 1s;
+    cursor: pointer;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    &:hover {
+        background-color: $main_color_white;
+        color: $main_color_pink;
+        border: 1px solid $main_color_pink;
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@media (max-width:1140px) {
+    .card_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_container_col_1 {
+        padding-top: 59px;
+        padding-bottom: 64px;
+        width: 734px;
+    }
+
+    .card_item {
+        width: 734px;
+    }
+
+    .card_item_text {
+        margin-right: 210px;
+    }
+
+    .card_item_buttons {
+        justify-content: center;
+    }
+
+    .card_item_button_mrg {
+        margin-right: 48px;
+    }
+
+    .card_container_col_2 {
+        margin-top: 0;
+        display: flex;
+        width: 100%;
+    }
+
+    .card_forms {
+        margin-right: 15px;
+        width: 359px;
+        margin-bottom: 128px;
+    }
+
+    .card_basket {
+        margin-top: 38px;
+    }
+}
+
+@media(max-width:735px) {
+    .card_container_col_1 {
+        padding-top: 39px;
+        padding-bottom: 48px;
+        width: 357px;
+    }
+
+    .card_items {
+        margin-bottom: 30px;
+    }
+
+    .card_item {
+        width: 357px;
+        margin-bottom: 32px;
+    }
+
+    .card_iten_img {
+        margin-right: 17px;
+        width: 143px;
+        height: 188px;
+    }
+
+    .card_item_text_zag {
+        margin-top: 13px;
+        margin-bottom: 25px;
+        font-size: $main_size_16;
+        line-height: $main_height_19;
+    }
+
+    .card_item_text_main {
+        margin-bottom: 4px;
+        font-size: $main_size_14;
+        line-height: $main_size_16;
+    }
+
+    .card_item_text {
+        margin-right: 50px;
+    }
+
+    .card_item_text_button {
+        background: url(../pictures/card_close_mobile.svg) no-repeat center;
+        width: 10px;
+        height: 10px;
+
+        &:hover {
+            background: url(../pictures/card_close_mobile_hover.svg) no-repeat center;
+        }
+    }
+
+    .card_item_text_main_marg {
+        margin-right: 15px;
+    }
+
+    .card_item_text_form {
+        display: inline-block;
+        width: 23px;
+        height: 124px;
+        font-weight: $main_weight_regular;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .card_item_button {
+        width: 174px;
+        height: 32px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .card_item_button_mrg {
+        margin-right: 10px;
+    }
+
+    .card_container_col_2 {
+        flex-direction: column;
+    }
+
+    .card_forms {
+        margin-bottom: 48px;
+    }
+
+    .card_basket {
+        margin-top: 0;
+        margin-bottom: 96px;
+    }
+}

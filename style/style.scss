@@ -1,0 +1,90 @@
+$main_color_black: #222222;
+$main_color_pink: #F16D7F;
+$main_color_pink_col_2: #EF5B70;
+$main_color_white: #FFFFFF;
+$main_color_white_col_1: #EBEBEB;
+$main_color_black_col_1: #000000;
+$main_color_black_col_2: #222224;
+$main_color_grey: #EAEAEA;
+$main_color_grey_col_2: #6F6E6E;
+$main_color_grey_col_3: #B1B1B1;
+
+$main_weight_bold: bold;
+$main_weight_lighter: lighter;
+$main_weight_regular: 400;
+
+$main_size_16: 16px;
+$main_size_24: 24px;
+$main_size_14: 14px;
+$main_size_13: 13px;
+
+$main_height_16: 16px;
+$main_height_17: 17px;
+$main_height_29: 29px;
+$main_height_19: 19px;
+
+
+@mixin flex_space() {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex_center() {
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    left: -99999999px;
+}
+
+@media (max-width:1140px) {
+    .container {
+        width: 735px;
+    }
+}
+
+@media(max-width:735px) {
+    .container {
+        width: 360px;
+    }
+}
+
+@import 'blocks/_header.scss';
+
+@import 'blocks/_offer';
+
+@import 'blocks/_catalog';
+
+@import 'blocks/_list';
+
+@import 'blocks/_benefits';
+
+@import 'blocks/_subscribe';
+
+@import 'blocks/_footer.scss';
+
+@import 'blocks/_nav_header';
+
+@import 'blocks/_registration';
+
+@import 'blocks/_item';
+
+@import 'blocks/_card';

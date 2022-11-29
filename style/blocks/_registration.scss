@@ -1,0 +1,201 @@
+.registration {
+    background-color: $main_color_white;
+}
+
+.registration_container {
+    padding-top: 64px;
+    @include flex_space;
+    align-items: flex-start;
+}
+
+.registration_form {
+    width: 360px;
+}
+
+.registration_form_field {
+    border: none;
+}
+
+.registration_form_zag {
+    margin-bottom: 20px;
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_16;
+    line-height: $main_height_19;
+    color: $main_color_black;
+}
+
+.registration_form_input {
+    font-family: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
+    width: 360px;
+    border: 1px solid #A4A4A4;
+}
+
+.registration_form_input::placeholder {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_13;
+    line-height: $main_height_16;
+    color: $main_color_grey_col_3;
+}
+
+.registration_form_intext_col_1 {
+    margin-bottom: 20px;
+}
+
+.registration_form_intext_col_2 {
+    margin-bottom: 30px;
+}
+
+.registration_form_intext_col_3 {
+    margin-bottom: 15px;
+}
+
+.registration_form_text {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_13;
+    line-height: $main_height_16;
+    color: $main_color_grey_col_3;
+    margin-bottom: 39px;
+}
+
+.registration_form_radio {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+}
+
+.registration_form_field_radio {
+    margin-bottom: 33px;
+}
+
+.registration_form_radio_text {
+    margin-left: 10px;
+    margin-right: 20px;
+    vertical-align: text-top;
+}
+
+.registration_form_radio_text {
+    font-weight: $main_weight_lighter;
+    font-size: 11px;
+    line-height: $main_height_17;
+    color: $main_color_black_col_1;
+}
+
+.registration_form_button {
+    width: 167px;
+    height: 50px;
+    background-color: $main_color_pink;
+    font-weight: $main_weight_regular;
+    font-size: $main_size_14;
+    line-height: $main_height_17;
+    color: $main_color_white;
+    margin-bottom: 96px;
+    border: none;
+    cursor: pointer;
+    transition: border 1s, color 1s, background-color 1s;
+
+    &:hover {
+        background-color: $main_color_white;
+        color: $main_color_pink;
+        border: 1px solid $main_color_pink;
+    }
+}
+
+.registration_form_button_text::after {
+    content: "";
+    background-image: url(../pictures/registration_icon_button.svg);
+    display: inline-block;
+    width: 17px;
+    height: 10px;
+    color: $main_color_white;
+    margin-left: 20px;
+    transition: 2s;
+}
+
+.registration_form_button:hover .registration_form_button_text:after {
+    background-image: url(../pictures/registration_icon_button_hover.svg);
+}
+
+.registration_form_input:focus {
+    outline-color: $main_color_pink;
+}
+
+.registration_loyalty {
+    width: 652px;
+}
+
+.registration_loyalty_zag {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_24;
+    line-height: $main_height_29;
+    color: $main_color_black_col_1;
+    margin-bottom: 22px;
+}
+
+.registration_loyalty_text {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_24;
+    line-height: $main_height_29;
+    color: $main_color_black_col_1;
+    margin-bottom: 21px;
+}
+
+.registration_loyalty_list {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_24;
+    line-height: $main_height_29;
+    color: $main_color_black_col_1;
+    list-style: none;
+}
+
+.registration_loyalty_listing {
+    background: url(../pictures/registration_icon_list.svg) no-repeat left center;
+    padding-left: 42px;
+}
+
+@media (max-width:1140px) {
+    .registration_loyalty {
+        width: 354px;
+    }
+
+    .registration_loyalty_zag {
+        font-size: $main_size_16;
+        line-height: $main_height_19;
+        margin-bottom: 32px;
+    }
+
+    .registration_loyalty_text {
+        font-size: $main_size_16;
+        line-height: $main_height_19;
+        margin-bottom: 22px;
+    }
+
+    .registration_loyalty_list {
+        font-size: $main_size_16;
+        line-height: $main_height_19;
+    }
+
+    .registration_loyalty_listing {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media(max-width:735px) {
+    .registration_container {
+        @include flex_space;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .registration_form_button {
+        margin-bottom: 40px;
+    }
+
+    .registration_loyalty_list {
+        margin-bottom: 81px;
+    }
+}

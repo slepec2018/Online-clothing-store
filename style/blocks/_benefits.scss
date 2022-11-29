@@ -1,0 +1,94 @@
+.benefits {
+    background-color: $main_color_black_col_2;
+}
+
+.benefits_container {
+    @include flex_space;
+    padding-top: 104px;
+    padding-bottom: 104px;
+}
+
+.benefits_card {
+    width: 310px;
+    flex-direction: column;
+    @include flex_center;
+    align-items: center;
+}
+
+.benefits_img_1::before {
+    content: '';
+    background: url(../pictures/offer_truck.svg) no-repeat center top;
+    width: 45px;
+    height: 40px;
+    transition: transform 1s;
+}
+
+.benefits_img_1:hover::before {
+    transform: scale(1.5);
+}
+
+.benefits_img_2:before {
+    content: '';
+    background: url(../pictures/offer_percent.svg) no-repeat center top;
+    width: 40px;
+    height: 40px;
+    transition: transform 1s;
+}
+
+.benefits_img_2:hover::before {
+    transform: scale(1.5);
+}
+
+
+.benefits_img_3::before {
+    content: '';
+    background: url(../pictures/offer_crown.svg) no-repeat center top;
+    width: 47px;
+    height: 40px;
+    transition: transform 1s;
+}
+
+.benefits_img_3:hover::before {
+    transform: scale(1.5);
+}
+
+.benefits_zagolovok {
+    font-weight: $main_weight_regular;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 54px;
+}
+
+.benefits_text {
+    font-weight: $main_weight_lighter;
+    font-size: $main_size_14;
+    line-height: $main_height_17;
+    color: #FBFBFB;
+    text-align: center;
+    margin-top: 16px;
+}
+
+@media (max-width:1140px) {
+    .benefits_container {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 15px;
+    }
+
+    .benefits_card {
+        margin-bottom: 48px;
+    }
+
+    .benefits_zagolovok {
+        margin-top: 19px;
+    }
+}
+
+@media(max-width:735px) {
+    .benefits_container {
+        padding-bottom: 33px;
+    }
+}

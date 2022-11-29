@@ -1,0 +1,103 @@
+.catalog {
+    background-color: $main_color_white;
+}
+
+.catalog_container {
+    @include flex_space;
+    flex-wrap: wrap;
+    padding-top: 65px;
+}
+
+.catalog_item {
+    background-color: #C4C4C4;
+    width: 360px;
+    height: 260px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    text-align: center;
+    flex-direction: column;
+    @include flex_center;
+
+}
+
+.catalog_col_1 {
+    background: url(../pictures/catalog_women.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.catalog_col_2 {
+    background: url(../pictures/catalog_man.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.catalog_col_3 {
+    background: url(../pictures/catalog_kids.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.catalog_col_4 {
+    background: url(../pictures/catalog_accesories.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+}
+
+.catalog_text_sale {
+    color: $main_color_white;
+    font-weight: $main_weight_regular;
+    font-size: $main_size_16;
+    line-height: $main_height_19;
+    transition: color 1s;
+}
+
+.catalog_text_main {
+    color: $main_color_pink;
+    font-weight: $main_weight_bold;
+    font-size: $main_size_24;
+    line-height: $main_height_29;
+    transition: color 1s;
+}
+
+.catalog_col_1:hover .catalog_text_sale,
+.catalog_col_2:hover .catalog_text_sale,
+.catalog_col_3:hover .catalog_text_sale,
+.catalog_col_4:hover .catalog_text_sale {
+    color: $main_color_pink;
+}
+
+.catalog_col_1:hover .catalog_text_main,
+.catalog_col_2:hover .catalog_text_main,
+.catalog_col_3:hover .catalog_text_main,
+.catalog_col_4:hover .catalog_text_main {
+    color: $main_color_white;
+}
+
+@media (max-width:1140px) {
+    .catalog_container {
+        padding-top: 20px;
+    }
+
+    .catalog_item {
+        width: 232px;
+        height: 167px;
+        margin-bottom: 20px;
+    }
+
+    .catalog_col_4 {
+        width: 100%;
+    }
+}
+
+@media(max-width:735px) {
+    .catalog_container {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 64px;
+    }
+
+    .catalog_item {
+        width: 343px;
+        height: 247px;
+        margin-bottom: 32px;
+    }
+}
